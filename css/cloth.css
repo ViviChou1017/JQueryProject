@@ -1,0 +1,136 @@
+*{
+    box-sizing:border-box;
+  }
+  .menu{
+    height:50px;
+    display:flex;
+   align-items:center;
+    background:black;
+  }
+  .menu>li{
+    padding-left:30px;
+  }
+  .menu li a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+  }
+  .list{
+    border:3px gray solid;
+    position:absolute;
+    top:46px;
+    left:92px;
+    z-index:100;
+    background:white;
+    display:none;
+  }
+  .list li a{
+    display:block;
+    color:orange;
+    font-weight:bold;
+    padding:10px 10px;
+  }
+  .list li a:hover,.menu li a:hover,.list-2 li a:hover,.list2 li a:hover{
+    text-decoration:underline red;
+  }
+  .list2{
+    width:100px;
+    height:500px;
+    background:yellow;
+    position:absolute;
+    top:50px;
+    left:-100px;
+    z-index:99
+  }
+  .list2.list3{
+     top:50px;
+     left:0;
+  }
+  .list2>li{
+    margin:10px 10px;
+  }
+  .list2 li a{
+    text-decoration:none;
+    font-size:25px;
+    font-weight:bold;
+  }
+  
+  .wrap{
+    width:900px;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .box1,.box2,.box3,.box4{
+    width:250px;
+    border:1px solid;
+    margin:10px 10px 0 10px ;
+    position:relative;
+  }
+  .wrap img{
+    width:200px;
+    margin:10px 25px;
+  }
+  .box1 p,.box2 p,.box3 p,.box4 p{
+    text-align:center;
+    padding-top:10px;
+  }
+  .add1,.add2{
+    position:absolute;
+    top:0;
+    display:none;
+  }
+  
+  .button{
+    font-size:18px;
+    margin-left:30%;
+    margin-top:10px;
+    margin-bottom:10px;
+    color:white;
+    background:black;
+    border-radius:15px;
+  }
+  .sale1,.sale2,.sale3,.sale4{
+    width:50px;
+    height:50px;
+    background:red;
+    color:white;
+    font-size:25px;
+    padding-top:10px;
+    padding-left:5px;
+  }
+  .sale1,.sale2,.sale3,.sale4{
+    position:absolute;
+    left:26px;
+    top:10px;
+    z-index:10;
+  }
+  /*固定式廣告*/
+  .ad{
+    width:150px;
+    height:150px;
+    border:solid;
+    background:black;
+    overflow:scroll;
+    position:fixed;
+    right:0;
+    bottom:0;
+  }
+  .ad>a{
+    font-size:20px;
+    color:white;
+    text-decoration: none;
+  }
+  .ad>img{
+    width:100px;
+    display:block;
+    margin-left:15%;
+    margin-bottom:5px;
+    margin-top:5px;
+  }
+  .ad>p{
+    margin:0 5px;
+    color:white;
+  }
+  
+  
+  

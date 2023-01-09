@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物網站排版</title>
+    <link rel="stylesheet" href="./css/cloth.css">
+    <link rel="stylesheet" href="./css/resetcss.css">
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/cloth.js"></script>
+</head>
+<body>
+    <div class="header">
+        <ul class="menu">
+          <li><a href="#">首頁</a></li>
+          <li><a class="open" href="#">女生</a>
+            <ul class="list">
+              <li><a href="#">上衣</a></li>
+              <li><a href="#">褲子</a></li>
+              <li><a href="#">鞋子</a></li>
+            </ul>
+          </li>
+          <li><a class="open2" href="#">男生</a></li>
+          <li><a href="#">兒童</a></li>
+        </ul>
+        <ul class="list2">
+          <li><a href="#">上衣</a></li>
+          <li><a href="#">褲子</a></li>
+          <li><a href="#">鞋子</a></li>
+        </ul>
+      </div>
+      <div class="wrap">
+        <div class="box1">
+          <a href="https://img.ltwebstatic.com/images3_pi/2021/10/23/16349708158adccdc8fbb987392f09c32b783d7ca9_thumbnail_600x.webp" data-lightbox="image-1" data-title="My caption"><img src="https://img.ltwebstatic.com/images3_pi/2021/10/23/16349708158adccdc8fbb987392f09c32b783d7ca9_thumbnail_600x.webp" alt="">
+          </a>
+          <a href="https://photo.whosewear.com/Photo/7ae-c177/7ae-c177-735-01.jpg" data-lightbox="image-1" data-title="My caption"><img class="add1" src="https://photo.whosewear.com/Photo/7ae-c177/7ae-c177-735-01.jpg" alt=""> </a>    
+          <p>產品一</p>
+          <p>NT$100</p>
+          <input type="button" class="button" value="加入購物車">
+          <div class="sale1">sale</div>
+        </div>
+        <div class="box2">
+          <a href="https://img.ltwebstatic.com/images3_pi/2021/10/19/163462174290113d890fdc5a1254451fdcc91ba1db_thumbnail_600x.webp" data-lightbox="image-2" data-title="My caption"><img src="https://img.ltwebstatic.com/images3_pi/2021/10/19/163462174290113d890fdc5a1254451fdcc91ba1db_thumbnail_600x.webp" alt=""></a>
+          <a href="https://img.ltwebstatic.com/images3_pi/2022/10/17/166597080410942b5d9d00977a9ed8ab832e637a45_thumbnail_600x.webp" data-lightbox="image-2" data-title="My caption">
+          <img class="add2" src="https://img.ltwebstatic.com/images3_pi/2022/10/17/166597080410942b5d9d00977a9ed8ab832e637a45_thumbnail_600x.webp" alt=""></a>
+          <p>產品二</p>
+          <p>NT$200</p>
+          <input type="button" class="button" value="加入購物車">
+          <div class="sale2">sale</div>
+        </div>
+        <div class="box3">
+          <a href="https://img.ltwebstatic.com/images3_pi/2021/06/25/1624610206bed1f9bbcea79dcc1709ebe21513596f_thumbnail_600x.webp" data-lightbox="image-1" data-title="My caption"><img src="https://img.ltwebstatic.com/images3_pi/2021/06/25/1624610206bed1f9bbcea79dcc1709ebe21513596f_thumbnail_600x.webp" alt=""></a>
+          <p>產品一</p>
+          <p>NT$100</p>
+          <input type="button" class="button" value="加入購物車">
+          <div class="sale3">sale</div>
+        </div>
+        <div class="box4">
+          <a href="https://img.ltwebstatic.com/images3_pi/2021/09/30/16329798070353a52fb553a6dfe59ee32c6e855438_thumbnail_600x.webp" data-lightbox="image-1" data-title="My caption"><img src="https://img.ltwebstatic.com/images3_pi/2021/09/30/16329798070353a52fb553a6dfe59ee32c6e855438_thumbnail_600x.webp" alt=""></a>
+          <p>產品一</p>
+          <p>NT$100</p>
+          <input type="button" class="button" value="加入購物車">
+          <div class="sale4">sale</div>
+        </div>
+      </div>
+      <div class="ad">
+        <a class="close" href="#">X</a>
+        <img src="data:image/jpeg;base64,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" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit quis maiores? Id dolore praesentium quisquam iusto quae voluptas atque vel. Laborum, delectus vitae officiis culpa autem at laboriosam aut provident deleniti? Facilis necessitatibus error consequuntur, aperiam voluptatibus reprehenderit optio similique provident maxime ad quas, sed consectetur asperiores beatae a?</p>
+      </div>
+</body>
+</html>

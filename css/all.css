@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+}
+/*網頁頭部 */
+.top{
+    margin:10px auto;
+    margin-top:-5px;
+    background-color: 	#F0F0F0;
+}
+.top h3{
+    text-align: center;
+    padding:10px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 128px;
+    background-color: 	#334FB4;
+    margin-top: -10px;
+    position: relative;
+}
+.header>div{
+    margin-left:128px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu li{
+    padding-right: 25px;
+}
+.menu>li:first-child{
+    text-decoration: underline;
+}
+.menu li a{
+    color:	#CCD3EC;
+    text-decoration: none;
+    font-size: 14px;;
+}
+.menu>li>a:hover,.menu>li>a:active{
+    color: white;
+    text-decoration: underline;
+}
+.list{
+    display: none;
+    width:200px;
+    background-color:#334FB4 ;
+    border:1px 		#0066CC solid;
+    position: absolute;
+    padding: 20px 0;
+    left:520px;
+    top:80px;
+    z-index: 99;
+}
+.list>li>a{
+    display: block;
+    padding: 10px 18px 15px  18px;
+}
+.list>li>a:hover{
+    color: white;
+}
+.pic{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 117px;
+}
+.pic li{
+    padding-left:10px;
+    padding-right:10px;
+    font-size: 20px;
+}
+.pic li a{
+    text-decoration: none;
+    color:white;
+}
+/*網頁右上角固定式選單*/
+.choose{
+    position: fixed;
+    z-index: 99;
+    right:10px;
+    top:10px;
+}
+.open{
+    display:none;
+  }
+ .choose img{
+    width:30px;
+  }
+  .box,.open{
+    background-color: white;
+  }
+  .box,.open-one,.open-two,.language>li,.coin>li,.submit{
+    width:400px;
+    border:	#F0F0F0 solid;
+    padding:5px;
+  }
+  .submit{
+    background-color: #0066CC;
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size: 16px;
+    margin-top:10px;
+}
+  .button{
+    border:white solid;
+    background:white;
+  }
+  .open h2{
+  font-size:20px;
+  font-weight:bold;
+  margin:10px 0;
+  padding:5px;
+  }
+  .open-one>.button{
+      margin-left:190px;
+  }
+  .coin>li{
+    background-color: white;
+  }
+  .language,.coin{
+    display:none;
+  }
+  .open-two>.button{
+    margin-left:110px;
+  }
+  /* 以下為banner */
+  .banner{
+    margin-bottom: 10px;
+  }
+  .banner img,.content-third img{
+    width:1000px;
+    height:400px;
+  }
+  /*輪播效果*/
+  .swiper {
+    margin: 0 auto;
+    width: 1000px;
+    height: 480px;
+  }
+  /*以下為內文*/    
+  .content-top{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:100px;
+  }
+  .content-top img{
+    width:365px;
+  }
+  .content-top>div{
+    width:330px;
+    height:400px;
+    overflow: hidden;
+    border:#F0F0F0 solid;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow:3px 5px 10px rgb(0,0,0,0.3);
+  }
+  .content-top>div:hover{
+    box-shadow:5px 5px 15px rgb(0,0,0,0.5);
+  }
+  .content-second{
+    margin-left: 13%;
+    color: #334FB4;
+    font-weight: bold;
+  }
+.content-second span{
+  font-size: 25px;
+  border-left:solid;
+}
+.content-second p{
+  display: inline-block;
+  font-size: 25px;
+  padding:20px;
+  padding-left:75px;
+  padding-right: 75px;
+}
+.content-second>p>i{
+  padding-left:15px;
+}
+.content-third{
+  margin: 10px 0;
+}
+.content-four h2{
+  font-size: 25px;
+  color: 			#5B5B5B;
+  margin: 20px 0;
+  margin-left: 70px;
+  
+}
+.featured-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 45px;
+  margin-top: 20px;
+}
+.featured-list img{
+  width:280px;
+}
+.no-pic>a{
+  display: block;
+  width:280px;
+  height:300px;
+  background-color:#E0E0E0;
+  margin-bottom:20px;
+}
+.no-pic>a>p{
+ padding-top:50%;
+ padding-left: 10%;
+ font-size: 20px;
+}
+.no-pic>a>.price{
+  padding-left: 0;
+}
+.featured-list>div{
+  width:300px;
+  height:350px;
+  margin: 10px 5px;
+}
+.featured-list>div>a{
+  text-decoration: none;
+}
+.featured-list p{
+  font-size:14px;
+  color:#5B5B5B;
+}
+.featured-list .price{
+  font-size: 18px;
+  color:#5B5B5B;
+}
+.featured-list>div>a:hover{
+  text-decoration: underline;
+}
+.showall{
+  display: block;
+  text-align: center;
+  margin-bottom:80px;
+}
+.showall>input{
+  width:120px;
+  height:50px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+}
+.notic{
+  margin-bottom: 80px;;
+}
+.notic p{
+  text-align: center;
+  color:#5B5B5B ;
+  line-height: 1.5;
+}
+.notic p:last-child{
+  display: inline-block;
+  margin-left: 33%;
+  background-color: #D0D0D0;
+}
+/*以下為頁尾*/
+.footer{
+  height:150px;
+  display: flex;
+  align-items: center;
+}
+.footer-first,.footer-last{
+  margin:0 150px;
+}
+.footer-first p,.footer-last p{
+  margin-top: 20px;
+  color:white;
+}
+.footer-first>p>a,.footer-last>p>a{
+  color:#CCD3EC;
+}
+.footer-first p a:hover,.footer-last p a:hover{
+  color:white;
+}
+.footer,.footer-between,.footer-bottom{
+  background-color: black;
+}
+.footer-between{
+  height:100px;
+  border-bottom: solid #CCD3EC;
+}
+.footer-between>i{
+  color:white;
+  margin-top: 30px;;
+  margin-left: 52%;
+  font-size: 17px;
+}
+.footer-bottom{
+  height:100px;
+}
+.footer-bottom>div{
+  margin-left: 40%;
+}
+
+.footer-bottom>div>i{
+  color:white;
+  font-size: 30px;
+  padding-right: 10px;
+  margin-top: 20px;;
+}
+/*小黃屋-保健食品*/
+
+.content-four>.titl{
+  font-size: 40px;
+}
+.content-four>.sectitl{
+  color: #ccd3ece0;
+  margin-left: 75px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+.content-four>.sectitl>h3>a{
+  text-decoration: none;
+  color: #ccd3ece0;
+}
+
